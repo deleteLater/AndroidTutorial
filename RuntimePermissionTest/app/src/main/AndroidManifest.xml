@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhang.databasetest">
+    package="com.zhang.runtimepermissiontest">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -16,13 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <provider
-            android:authorities="com.zhang.databasetest.provider"
-            android:name=".DatabaseProvider"
-            android:enabled="true"
-            android:exported="true"
-            />
     </application>
 
 </manifest>
